@@ -21,12 +21,12 @@ def get_version(rel_path):
 setup(
     name="automate",
     author="C. Dhainaut",
-    version=get_version("automate/__init__.py"),
+    version=get_version("src/__init__.py"),
     packages=find_packages(),
     python_requires=">=3.6",
     entry_points={
         "console_scripts": [
-            "automate = automate.cli:main",
+            "automate = src.cli:main",
         ],
     },
 )
