@@ -1,6 +1,6 @@
 import argparse
 import numpy as np
-from automate import post
+from automate import post,pre
 
 
 def build_parser():
@@ -12,6 +12,7 @@ def build_parser():
 
     d_categories = {
         "pre":{
+            "parse": pre.Parser,
 
         },
         "post": {
